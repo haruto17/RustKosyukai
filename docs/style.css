@@ -1,1 +1,41 @@
 @charset "UTF-8";
+
+body {
+    color: black;
+    background-color: beige;
+}
+
+a {
+    color: black;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: block;
+    position: absolute;
+}
+
+.nav-list {
+
+}
+
+.nav {
+
+}
+
+.footer {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
+    max-width: 400px;
+    text-align: center;
+    color: black;
+    background-color: rgb(247, 138, 15);
+}
