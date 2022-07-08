@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    color: black;
+    background-color: beige;
+}
+
+a {
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-container {
+    border-style: double;
+    border-width: 5px;
+    border-color: black;
+    max-width: 400px;
+    text-align: center;
+}
+
+.footer {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border-width: 5px;
+    border-style: double;
+    border-color: black;
+    max-width: 400px;
+    text-align: center;
+    color: black;
+    background-color: rgb(247, 138, 15);
+}
