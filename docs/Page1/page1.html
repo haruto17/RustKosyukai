@@ -6,9 +6,8 @@
         <link rel="stylesheet" href="../style.css">
         <title>Rust講習会 -環境構築-</title>
     </head>
-    <body>
+    <body class="container">
         <h1 align="center">Rust講習会</h1>
-        <div class="main-container">
             <div class="nav-container">
                 <li><a href="../index.html" style="text-decoration: none;">HOME</a></li>
                 <li><a href="../Page1/page1.html" style="text-decoration: none;">環境構築</a></li>
@@ -23,12 +22,69 @@
                 <li><a href="../Page10/page10.html" style="text-decoration: none;">リンク集</a></li>
                 <li><a href="../Page11/page11.html" style="text-decoration: none;">クレート解説</a></li>
             </div>
-        <div>
             <h2 align="center">-環境構築-</h2>
+            <P align="center">
+                この章では、Rustの学習に必要な環境構築について紹介しています
+            </P><br>
             <main>
-                <P>
-                    この章では、Rustの学習に必要な環境構築について紹介しています
-                </P>
+                <div class="main-container">
+                    <h2>1.Ubuntuの取得</h2>
+                    <p>マイクロソフトストアを起動し、「Ubuntu」と検索する</p>
+                    <p>Ubuntuをインストールする</p>
+                    <u>※このサイトでは「Ubuntu 20.04.4 LTS」を使用しています。</u><br><br>
+                    <h2>2.WSLのインストール</h2>
+                    <h3>1.コマンドプロンプトを管理者モードで起動し、次のコマンドを実行する</h3>
+                    <h4 class="box">wsl --install</h4><br>
+                    <h3>2.Windowsを再起動する</h3><br>
+                    <h3>3.再起動後、Ubuntuを起動しUNIXアカウントを作成する</h3><br>
+                    <h3>4.次のコマンドを実行する</h3>
+                    <h4 class="box">sudo apt update</h4>
+                    <h4 class="box">sudo apt dist-upgrade</h4>
+                    <h4 class="box">sudo apt autoremove</h4><br>
+                    <h3>5.次のコマンドを実行し、build-essentialをインストールする</h3>
+                    <h4 class="box">sudo apt-get update</h4>
+                    <h4 class="box">sudo apt-get install build-essential</h4><br>
+                    <h2>2.VScodeのインストール</h2>
+                    <p>コードエディタとして、ここではVisual Studio Codeを使用します。</p>
+                    <h3>1.次のサイトからVScodeのインストーラーを入手する</h3>
+                    <a href="https://code.visualstudio.com/download">インストーラーの入手</a><br>
+                    <h3>2.インストーラーを起動し、VScodeをインストールする</h3>
+                    <p>インストール中にでてくる「PATHへの追加」のチェックは必ずしてください。</p><br>
+                    <h3>3.VScodeを起動せずに、インストーラーを終了する</h3><br>
+                    <h3>4.Windowsを再起動する</h3><br>
+                    <h2>3.Rustのインストール</h2>
+                    <h3>1.Ubuntu上で次のコマンドを実行する</h3>
+                    <h4 class="box">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh</h4>
+                    <h3>2.インストール方法を聞かれるので、1を選択する</h3><br>
+                    <h3>3.次のコマンドを実行する(パスを通す)</h3>
+                    <h4 class="box">source $HOME/.cargo/env</h4><br>
+                    <h3>4.次のコマンドでRustのバージョンを確認する</h3>
+                    <h4 class="box">rustc --version</h4>
+                    <h4 class="box">cargo --version</h4>
+                    <p>インストールが正しくおこなわれていれば、バージョンが表示されるはずです。</p><br>
+                    <h2>4.作業用ディレクトリの作成</h2>
+                    <h3>1.次のコマンドを実行し、作業用ディレクトリを作成する</h3>
+                    <h4 class="box">mkdir $HOME/work</h4><br>
+                    <h3>2.次のコマンドを実行し、作成した作業用ディレクトリに移動する</h3>
+                    <h4 class="box">cd $HOME/work</h4><br>
+                    <h3>3.次のコマンドでRustのプロジェクトを作成する</h3>
+                    <h4 class="box">cargo new --bin rust_training</h4>
+                    <p>プロジェクト名は適宜変更してください</p><br>
+                    <h3>4.次のコマンドで、作成したプロジェクトディレクトリに移動する</h3>
+                    <h4 class="box">cd $HOME/work/rust_training</h4><br>
+                    <h2>5.VScodeの設定</h2>
+                    <h3>1.プロジェクトディレクトリ直下にいる状態で、次のコマンドを実行する(VScodeの起動)</h3>
+                    <h4 class="box">code .</h4>
+                    <p>起動したとき、「Do you truet the...」という警告が出るかもしれませんが、「Yes」を選択してください。</p>
+                    <h3>2.拡張機能「Remote - WSL」をインストールする</h3><br>
+                    <h3>3.左下の緑色の矢印をクリックする</h3><br>
+                    <h3>4.「Reopen Folder in WSL」を選択する</h3>
+                    <h3>5.Ctrl + @でターミナルを起動し、bashになっていることを確認する</h3><br>
+                    <h3>6.拡張機能「Rust」をインストールする</h3>
+                    <p>インストールしmain.rsを開くと、右下に「Some Rust Components not installed. install?」と
+                        <br>ポップアップが表示されるので、「Yes」を選択してください。
+                    </p>
+                </div>
             </main>
             <footer>
                 <div class="footer">
