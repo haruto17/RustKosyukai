@@ -39,7 +39,10 @@ li a {
     border-width: 5px;
     border-color: black;
     max-width: 400px;
+    height: 500px;
     text-align: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .header {
