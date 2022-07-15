@@ -5,12 +5,20 @@ body {
     background-color: beige;
 }
 
-a {
+/* a {
     color: black;
-}
+    text-decoration: none;
+} */
 
 li {
     list-style-type: none;
+}
+
+li a {
+    color: black;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
 }
 
 .container {
@@ -24,9 +32,6 @@ li {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    border-style: double;
-    border-width: 5px;
-    border-color: black;
 }
 
 .nav-container {
