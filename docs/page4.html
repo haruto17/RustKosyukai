@@ -28,8 +28,35 @@
 		</div>
 		<div>
 			<h2 align="center">-変数と定数-</h2>
+			<p align="center">この章では、変数と定数を宣言する方法を紹介しています</p>
 			<main>
-				<div class="main-container"></div>
+				<div class="main-container">
+					<h2>変数の宣言</h2>
+					<script src="https://gist.github.com/haruto17/85a5e75df64e7b37ecab7571ed91c8f5.js"></script>
+					<p>
+						このように書くことで、変数を宣言することができます。
+						letの後には半角空白を1ついれて変数名を書き、最後には必ずセミコロンをつけましょう。
+					</p>
+					<br />
+					<h3>変数への代入</h3>
+					<script src="https://gist.github.com/haruto17/a2941b57fd6b9d0706c8c0d406b122c2.js"></script>
+					<p>このように書くことで、変数に値を代入することができます。</p>
+					<br />
+					<h3>型推論</h3>
+					<p>
+						Rustには、コンパイラが変数の型を推論してくれる「型推論」という機能があります。
+						上のコードで、変数の型を明記しなくてもいいのは、_hogeに5という値が代入されたことにより
+						コンパイラが「変数_hogeは数値型」と推論したためです。
+						この機能はとても便利ですが、異なる型同士の代入や計算、比較はコンパイルエラーの原因になるので、注意が必要です。
+					</p>
+					<br />
+					<h2>定数の宣言</h2>
+					<script src="https://gist.github.com/haruto17/13dd3d0bfd3613c60030b6d0778cb4dc.js"></script>
+					<p>
+						このように書くことで、定数を宣言することができます。
+						宣言するには、constという修飾子を使います。その後に定数名を書き、定数の型を明記します。
+					</p>
+				</div>
 			</main>
 			<footer>
 				<div class="footer">
