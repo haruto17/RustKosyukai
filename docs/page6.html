@@ -29,7 +29,40 @@
 		<div>
 			<h2 align="center">-条件分岐-</h2>
 			<main>
-				<div class="main-container"></div>
+				<div class="main-container">
+					<h2>if文</h2>
+					<p>はじめに、if文を使い条件分岐をするやり方を紹介します。</p>
+					<script src="https://gist.github.com/haruto17/2b1324b3c9d0f704f4ab59d54c837f00.js"></script>
+					<p>
+						これがRustのif文の基本的な書き方です。
+						<br />注意として、比較する対象はどちらも同じ型である必要があります。例えば、以下のように異なる型同士を比較しようとすると
+						エラーになります。
+					</p>
+					<script src="https://gist.github.com/haruto17/0d1a4c14ec4e57991170e3efd5823c82.js"></script>
+					<br />
+					<p>
+						if文では以下のようにすることで、条件式の返り値によって、変数の値を決定することができます。
+					</p>
+					<script src="https://gist.github.com/haruto17/7c67564d7f6b0871ca51569e9e990866.js"></script>
+					<br />
+					<h2>match文</h2>
+					<p>
+						match文では、パターンと一致するものがある場合、指定した処理を実行することができます。
+						<br />一致するものがない場合は、「=>」の処理が実行されます。
+					</p>
+					<script src="https://gist.github.com/haruto17/2ac6dc4eb4814c899855754a1313bc3b.js"></script>
+					<br />
+					<h2>課題</h2>
+					<h3>電卓を作ってみよう</h3>
+					<p>
+						入力を受け取って、その計算結果を出力する電卓を作ってみましょう。
+						<br />入力例 <br />足し算をしたい場合、「1 +
+						1」と入力し、その答えを表示する。
+					</p>
+					<p>次のコードの続きを書いてみましょう。</p>
+					<script src="https://gist.github.com/haruto17/28af9d83796d895949f0d19fbd3b42bd.js"></script>
+					<br />
+				</div>
 			</main>
 			<footer>
 				<div class="footer">
