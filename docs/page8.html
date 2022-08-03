@@ -28,8 +28,60 @@
 		</div>
 		<div>
 			<h2 align="center">-配列-</h2>
+			<p align="center">この章では、配列の使い方を紹介しています</p>
+			<br />
 			<main>
-				<div class="main-container"></div>
+				<div class="main-container">
+					<p>
+						配列を宣言するには、以下のように[要素の型;
+						要素数]という具合に指定します。
+					</p>
+					<script src="https://gist.github.com/haruto17/34372188519518a8a85d63aba2c0c278.js"></script>
+					<br />
+					<p>
+						配列要素にアクセスするには「変数名[インデックス]」としておこなうことができます。
+						<br />無効なインデックスを指定するとエラーになるので注意しましょう。
+					</p>
+					<script src="https://gist.github.com/haruto17/d3a77bda60083623ce8bf20fda57ceb6.js"></script>
+					<br />
+					<h2>固定長配列と可変長配列</h2>
+					<h3>固定長配列</h3>
+					<p>
+						ここまで紹介してきた配列は「固定長配列(静的配列)」と呼ばれるものです。
+						<br />これは、コンパイル時に配列のサイズが確定している必要があり、一度初期化されると、その後はサイズを変更することができません。
+						そのため、変数を使用して配列のサイズを定義したり、後から値の追加・削除はできません。
+					</p>
+					<script src="https://gist.github.com/haruto17/cd8e97b68b4fdf02a5079ded5da72773.js"></script>
+					<br />
+					<h3>可変長配列</h3>
+					<p>
+						固定長配列とは反対に、「可変長配列(動的配列)」というものもあります。
+						<br />これは名前の通り、初期化後も配列のサイズを変更することができます。つまり、後から値の追加や削除をおこなうことができます。
+					</p>
+					<script src="https://gist.github.com/haruto17/ff3ad370542285d8e32cfe2f15b91574.js"></script>
+					<br />
+					<h2>おまけ 配列操作まとめ</h2>
+					<br />
+					<h3>ソート　.sort()</h3>
+					<script src="https://gist.github.com/haruto17/42ae630fc145b481e7f11366663c9676.js"></script>
+					<br />
+
+					<h3>重複要素をまとめる　.dedup()</h3>
+					<script src="https://gist.github.com/haruto17/7350bceba06d2d4c5a0d5bc2dfe48161.js"></script>
+					<br />
+
+					<h3>反転　.reverse()</h3>
+					<script src="https://gist.github.com/haruto17/7673363570322413a9c93de5fe63860e.js"></script>
+					<br />
+
+					<h3>要素の削除　.pop() .remove() .drain()</h3>
+					<script src="https://gist.github.com/haruto17/147dc5ff7a9f6e871caa05696f5a1012.js"></script>
+					<br />
+
+					<h3>配列の結合と分割　.append() .split_off()</h3>
+					<script src="https://gist.github.com/haruto17/31850d9860324aaf4fe2e9a9bbf2ad00.js"></script>
+					<br />
+				</div>
 			</main>
 			<footer>
 				<div class="footer">
